@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="todoapp.css">
+    <title>Todo App</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="title">
+            <h1>Todo App</h1>
+        </div>
+
+        <!-- Nhập todo thêm mới -->
+        <form class="input" id="upload">
+            <div>
+                <input class="input-todo" name="dataUp" type="text" placeholder="Add your new todo">
+                <button><i class="fa-sharp fa-solid fa-plus fa-3x"></i></button>
+
+            </div>
+        </form>
+
+        <!-- Danh sách todo -->
+        <div class="todo-list" id="todoList">
+        </div>
+
+        <!-- Chuyển trang -->
+        <div class="page" id="page">
+            <button class="previos" id="previos"><i class="fa-sharp fa-solid fa-backward"></i></button>
+            <div class="page-id" id="pageId"></div>
+            <button class="next" id="next"><i class="fa-sharp fa-solid fa-forward"></i></button>
+        </div>
+
+
+        <!-- Hiện thông báo danh sách chưa làm và xóa hết dữ liệu -->
+        <div class="todo-total" id="todoTotal">
+            <div class="mes-total">You have <span id="count">0</span> pending tasks</div>
+            <button class="total-btn" id="totalBtn">Clear All</button>
+        </div>
+    </div>
+
+
+    <button class="update" id="update">Update</button>
+    <input class="per-page" id="perPage" type="number" placeholder="Per-Page">
+</body>
+<script src="/todoapp.js"></script>
+
+</html>

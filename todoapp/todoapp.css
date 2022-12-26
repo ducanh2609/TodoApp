@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgb(41, 177, 235), rgb(30, 30, 213));
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.app {
+  position: relative;
+  background-color: white;
+  width: 30%;
+  margin: 2% auto;
+  height: 90%;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.title {
+  position: relative;
+  /* border: 1px solid red; */
+  height: 10%;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input {
+  position: relative;
+  /* border: 1px solid red; */
+  height: 10%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input {
+  position: relative;
+  width: 82%;
+  height: 60px;
+  font-size: 30px;
+  box-sizing: border-box;
+  border: 2px solid blue;
+  outline: 0;
+  padding-left: 10px;
+}
+button {
+  border: none;
+  outline: none;
+}
+
+.fa-plus {
+  /* border: 1px solid red; */
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 15%;
+  text-align: center;
+  background-color: rgb(148, 57, 227);
+  color: white;
+  line-height: 60px;
+  box-sizing: border-box;
+  top: 0px;
+}
+
+.check {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  left: 5px;
+}
+.todo-list {
+  /* border: 1px solid blue; */
+  position: relative;
+  top: 10px;
+  height: 64%;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.todo {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  line-height: 50px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  width: 85%;
+  overflow: auto;
+}
+
+.todoapp {
+  /* border: 1px red solid; */
+  background-color: rgba(133, 161, 153, 0.523);
+  border-radius: 5px;
+  height: max-content;
+  margin: 10px 0;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.del {
+  /* border: 1px solid red; */
+  position: absolute;
+  left: calc(100% - 60px);
+  top: 0;
+  height: 50px;
+  width: 15%;
+  text-align: center;
+  background-color: rgb(234, 26, 46);
+  color: white;
+  line-height: 50px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: none;
+}
+.todoapp:hover .del {
+  display: block;
+}
+
+.page {
+  /* border: 1px solid red; */
+  position: relative;
+  top: 15px;
+  height: 25px;
+  display: flex;
+  line-height: 22px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.page-id {
+  /* border: 1px solid red; */
+  display: flex;
+  overflow: hidden;
+}
+.order {
+  border: 1px solid red;
+  height: 100%;
+  display: block;
+  width: 25px;
+  text-align: center;
+  margin: 0 3px;
+}
+.order:hover {
+  cursor: pointer;
+}
+.order a {
+  text-decoration: none;
+}
+.previos,
+.next {
+  width: 25px;
+  /* border: 1px solid blue; */
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 2px;
+  background-color: rgba(173, 166, 166, 0.901);
+}
+.previos i:hover {
+  color: red;
+}
+.next i:hover {
+  color: blue;
+}
+.todo-total {
+  position: absolute;
+  bottom: 20px;
+  width: calc(100% - 40px);
+  /* border: 1px solid red; */
+  height: 8%;
+  box-sizing: border-box;
+  overflow: auto;
+  display: flex;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 45px;
+}
+
+.mes-total {
+  width: 70%;
+  /* background-color: rgba(133, 161, 153, 0.851); */
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.total-btn {
+  width: 30%;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(148, 57, 227);
+  border-radius: 10px;
+  border: none;
+}
+
+.total-btn:hover,
+.fa-solid:hover,
+button {
+  cursor: pointer;
+}
+
+.update {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  top: 600px;
+  right: 390px;
+  background-color: rgba(26, 199, 26, 0.851);
+  box-shadow: 5px 5px 10px rgba(42, 41, 41, 0.762);
+  border-radius: 5px;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.per-page {
+  width: 160px;
+  position: absolute;
+  top: 500px;
+  right: 330px;
+  box-shadow: 5px 5px 10px rgba(42, 41, 41, 0.762);
+}
